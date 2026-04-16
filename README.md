@@ -25,7 +25,7 @@ WordPress子テーマ開発用のテンプレートです。
 
 ## 使用テーマ
 
-- Lightning
+- Lightning 15.34.1
 
 ---
 
@@ -33,9 +33,11 @@ WordPress子テーマ開発用のテンプレートです。
 
 * All-In-One Security (AIOS)
 * Advanced Custom Fields
-* vk-all-in-one-expansion-unit
-* vk-block-patterns
-* vk-blocks
+
+### テーマ依存プラグイン
+* vk-all-in-one-expansion-unit 9.113.6 
+* vk-block-patterns 1.35.2
+* vk-blocks 1.118.2
 
 ---
 
