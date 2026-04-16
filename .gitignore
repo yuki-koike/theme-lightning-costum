@@ -54,3 +54,11 @@ local-xdebuginfo.php
 /node_modules
 
 *.map
+
+# 自作プラグインのみ許可
+/wp-content/plugins/*
+!/wp-content/plugins/my-*
+
+# Example themes
+/wp-content/themes/*
+!/wp-content/themes/my-*
