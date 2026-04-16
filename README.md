@@ -120,6 +120,8 @@ my-custom-theme
             ├── search.scss                # 検索ページ
             └── single.scss                # 単一投稿ページ
 
+```
+
 ---
 
 ## 開発コマンド
