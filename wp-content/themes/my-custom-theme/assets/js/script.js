@@ -1,0 +1,1 @@
+var e=((e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports))((()=>{console.log(`init loaded`)}));export default e();

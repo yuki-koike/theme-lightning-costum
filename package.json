@@ -1,0 +1,60 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "ワードプレステーマをカスタマイズして制作用のテンプレートを作成する開発環境です\r 子テーマでの運用を想定しています。",
+  "main": "index.js",
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ],
+  "lint-staged": {
+    "wp-content/themes/my-custom-theme/src/**/*.js": [
+      "eslint --fix"
+    ],
+    "wp-content/themes/my-custom-theme/src/scss/**/*.scss": [
+      "stylelint --fix"
+    ]
+  },
+  "scripts": {
+    "dev:scss": "sass wp-content/themes/my-custom-theme/src/scss/style.scss wp-content/themes/my-custom-theme/assets/css/style.css --watch --style=expanded --no-source-map",
+    "dev:js": "vite build --watch",
+    "dev": "concurrently \"npm run dev:scss\" \"npm run dev:js\"",
+    "build": "sass wp-content/themes/my-custom-theme/src/scss/style.scss wp-content/themes/my-custom-theme/assets/css/style.css --style=compressed --no-source-map && postcss wp-content/themes/my-custom-theme/assets/css/style.css -o wp-content/themes/my-custom-theme/assets/css/style.css --no-map",
+    "lint:scss": "stylelint \"wp-content/themes/my-custom-theme/src/scss/**/*.scss\"",
+    "lint:js": "eslint \"wp-content/themes/my-custom-theme/src/**/*.js\"",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuki-koike/web-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yuki-koike/web-template/issues"
+  },
+  "homepage": "https://github.com/yuki-koike/web-template#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "autoprefixer": "^10.4.27",
+    "concurrently": "^9.2.1",
+    "cssnano": "^7.1.3",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.1",
+    "postcss-preset-env": "^11.2.0",
+    "prettier": "^3.8.1",
+    "sass": "^1.98.0",
+    "stylelint": "^17.5.0",
+    "stylelint-config-recess-order": "^7.7.0",
+    "stylelint-config-standard": "^40.0.0",
+    "vite": "^8.0.1"
+  }
+}
