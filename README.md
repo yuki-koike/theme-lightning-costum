@@ -23,7 +23,13 @@ WordPress子テーマ開発用のテンプレートです。
 
 ---
 
-## 想定プラグイン
+## 使用テーマ
+
+- Lightning
+
+---
+
+## 使用プラグイン
 
 * All-In-One Security (AIOS)
 * Advanced Custom Fields
